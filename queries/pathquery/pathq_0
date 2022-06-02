@@ -1,0 +1,4 @@
+g.V().has("id", id).has("type", type)
+	.Repeat(out(TYPE).SimplePath())
+	.Time(N)
+	.Path()

@@ -1,0 +1,5 @@
+g.V().has("id", id).has("type", type)
+        .Repeat(out(TYPE))
+	.Emit()
+	.Time(2)
+	.Dedup()

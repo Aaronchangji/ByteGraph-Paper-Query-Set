@@ -1,0 +1,7 @@
+g.V().has("id", id).has("type", type)
+	.Repeat(out(TYPE).where(without(LABEL)).store(LABEL))
+	.Until(
+		or(g.V().has("id", id).has("type", type)
+		.where(withloops().is(gt(N))
+	)
+	.Path()

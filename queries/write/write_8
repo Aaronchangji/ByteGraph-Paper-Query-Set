@@ -1,0 +1,6 @@
+// Delete an edge
+
+g.V().has("id", id).has("type", type)
+	.outE(TYPE)
+	.where(otherV().has("id", id).has("type", type)
+	.drop()

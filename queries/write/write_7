@@ -1,0 +1,6 @@
+// Delete all properties of out-going edges
+
+g.V().has("id", id).has("type", type)
+	.outE(TYPE)
+	.properties("p0", "p1")
+	.drop()

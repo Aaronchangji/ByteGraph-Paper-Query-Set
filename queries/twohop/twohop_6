@@ -1,0 +1,5 @@
+g.V().has("id", id).has("type", type)
+        .out(TYPE)
+	.where(
+		in(TYPE).has("id", id).has("type", type)
+	)

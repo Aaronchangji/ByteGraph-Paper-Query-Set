@@ -1,0 +1,4 @@
+g.V().has("id", id).has("type", type)
+        .out(TYPE)
+	.outE(TYPE)
+        .withProperties("p0", "p1", "p2")

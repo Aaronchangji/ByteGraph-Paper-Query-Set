@@ -1,0 +1,6 @@
+g.V().has("id", id).has("type", type)
+        .Repeat(out(TYPE).withProperties("p0", "p1", "p2"))
+	.Emit()
+	.Times(2)
+	.Dedup()
+	.Order().By(p3)

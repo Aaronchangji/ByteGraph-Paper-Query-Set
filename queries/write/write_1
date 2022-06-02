@@ -1,0 +1,9 @@
+// Insert an edge
+
+g.addE(TYPE).from(id1, type1)
+	.to(id2, type2)
+	.property("p0", val0)
+	.property("p1", val1)
+	.property("p2", val2)
+	.property("p3", val3)
+	.property("p4", val4)

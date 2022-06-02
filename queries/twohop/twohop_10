@@ -1,0 +1,8 @@
+g.V().has("id", id).has("type", type)
+        .outE(TYPE)
+	.store(LABEL)
+	.otherV()
+	.outE(TYPE)
+	.store(LABEL)
+	.cap(LABEL).Unfold()
+	.Dedup()

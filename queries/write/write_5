@@ -1,0 +1,7 @@
+// Modify properties of all out-going edges
+
+g.V().has("id", id).has("type", type)
+	.outE(TYPE)
+	.property("p0", val0)
+	.property("p1", val1)
+	.property("p2", val2)

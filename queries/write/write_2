@@ -1,0 +1,6 @@
+// Modify the properties of a vertex
+
+g.V().has("id", id).has("type", type)
+	.property("p0", val0)
+	.property("p1", val1)
+	.property("p2", val2)

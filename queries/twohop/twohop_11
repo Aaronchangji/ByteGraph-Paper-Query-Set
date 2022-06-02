@@ -1,0 +1,5 @@
+g.V().has("id", id).has("type", type)
+        .out(TYPE)
+	.project("p0", "p1")
+	.by(values(p0))
+	.by(in(TYPE).count())

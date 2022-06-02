@@ -1,0 +1,2 @@
+g.V().has("id", id).has("type", type)
+        .out(TYPE)

@@ -1,0 +1,5 @@
+g.V().has("id", id).has("type", type)
+	.Double(TYPE).limit(N)
+	.local(
+		out(TYPE).has("id", without(N2)).limit(N3)
+	)

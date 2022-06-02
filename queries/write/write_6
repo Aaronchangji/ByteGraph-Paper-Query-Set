@@ -1,0 +1,7 @@
+// Delete the properties of an edge
+
+g.V().has("id", id).has("type", type)
+	.outE(TYPE)
+	.where(otherV().has("id", id).has("type", type))
+	.properties("p0", "p1")
+	.drop()

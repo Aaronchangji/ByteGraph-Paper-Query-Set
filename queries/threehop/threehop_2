@@ -1,0 +1,4 @@
+g.V().has("id", id).has("type", type)
+	.Double(TYPE).limit(N1)
+	.out(TYPE).limit(N2)
+	.group().by(p0).by(p1).by(Count())

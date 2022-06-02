@@ -1,0 +1,5 @@
+// Delete all out-going edges
+
+g.V().has("id", id).has("type", type).
+	.outE("knows")
+	.drop()

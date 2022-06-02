@@ -1,0 +1,3 @@
+g.V().has("id", id).has("type", type)
+        .out(TYPE)
+	.where(out(TYPE).count().lt(N))

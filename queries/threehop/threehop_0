@@ -1,0 +1,8 @@
+g.V().has("id", id).has("type", type).out(TYPE).limit(N1)
+	.where(
+		in(TYPE).count(global).is(P.lt(N2))
+	).local(
+		in(TYPE).limit(N3)
+	).where(
+		in(TYPE).count(global).is(P.lt(N4))
+	).path()
